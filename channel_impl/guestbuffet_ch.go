@@ -57,6 +57,7 @@ func BuffetStart(plist []Guest) {
 	fmt.Println(" ")
 	fmt.Println("buffet End time", time.Now())
 	fmt.Printf("All guests have eaten : %s ", time.Now().Sub(buffetStarttime))
+	fmt.Println("total wait time is ", totalwait)
 }
 
 // in this func which is called using goroutine, we will keep reading channel guest
